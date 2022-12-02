@@ -1,8 +1,8 @@
 import FormStl from "./styles";
 
-function Form ({children}) {
+function Form ({children, onSubmit}) {
     return (
-        <FormStl>
+        <FormStl onSubmit={onSubmit}>
             {children}
         </FormStl>
     )
