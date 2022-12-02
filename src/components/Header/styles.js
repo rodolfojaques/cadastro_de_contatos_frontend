@@ -7,6 +7,7 @@ const HeaderStl = styled.header`
 
     width: 100%;
     height: 10vh;
+    min-height: 70px;
 
     font-weight: bold;
 

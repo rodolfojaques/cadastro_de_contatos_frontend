@@ -3,7 +3,9 @@ import styled from "styled-components";
 const FormStl = styled.form`
 
     width: 90%;
+    max-width: 500px;
     height: 65vh;
+    min-height: 460px;
 
     border-radius: 5px;
     padding: 1rem;
@@ -16,6 +18,14 @@ const FormStl = styled.form`
 
     background-color: #080818;
 
+    .container{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+    }
+
     input{
         width: 100%;
         height: 2rem;
@@ -23,6 +33,20 @@ const FormStl = styled.form`
         &::placeholder{
             padding-left: .5rem;
         }
+    }
+
+    .button_form{
+        background-color: purple;
+        color: antiquewhite;
+
+        border-style: none;
+        cursor: pointer;
+
+        font-weight: bold;
+    }
+
+    @media (min-width: 700px) {
+        width: 50%;
     }
 `
 
